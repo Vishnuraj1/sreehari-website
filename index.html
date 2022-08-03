@@ -17,8 +17,24 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 /* Remove margins from "page content" on small screens */
 @media only screen and (max-width: 600px) {#main {margin-left: 0}}
 </style>
+<link rel="stylesheet" href="sample.css">
 </head>
 <body class="w3-black">
+
+
+<div class="loader-wrapper">
+  <div class="container">
+    <div class="flex">
+    <div class="loader">
+    </div>
+    </div>
+    <div class="load-text">
+    Loading...
+    </div>
+    </div>
+</div> 
+
+
 
 <!-- Icon Bar (Sidebar - hidden on small screens) -->
 <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
@@ -146,6 +162,22 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 
 <!-- END PAGE CONTENT -->
 </div>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+<script>
+  $(document).ready(function () {
+      // Animate loader off screen
+      setTimeout(function () {
+          $(".loader-wrapper").fadeOut("slow");
+      }, 0);
+  });
+</script>
+
+
 
 </body>
 </html>
