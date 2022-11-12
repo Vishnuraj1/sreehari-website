@@ -25,6 +25,10 @@
   .flex {
     min-height: 60pt;
   }
+
+  .w3-input{
+    border-radius: 2%;
+  }
   
   @keyframes loading {
     0% {
